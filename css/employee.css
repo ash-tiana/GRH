@@ -1,0 +1,131 @@
+
+.employeelist {
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 35px;
+  color: red;
+  text-align: center;
+}
+
+.add {
+  font-size: 14px;
+  color: white;
+}
+
+.add:hover {
+  background-color: rgba(0, 0, 255, 0.5);
+  color: white;
+  transition: all 0.5s;
+}
+
+.table {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.update {
+  background-color: rgba(0, 153, 255, 0.644);
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+.delet {
+  background-color: rgba(239, 243, 3, 0.582);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.view {
+  background-color: rgba(252, 4, 149, 0.575);
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+th,
+td {
+  color: black;
+  border: 1px solid black;
+}
+
+.tr2 {
+  background-color: rgba(0, 153, 255, 0.452);
+}
+
+.tr4 {
+  background-color: rgba(239, 243, 1, 0.438);
+}
+
+.tr6 {
+  background-color: rgba(252, 4, 149, 0.384);
+}
+
+.employee {
+  background-image: url(../image/projet6.jpg);
+  border: 2px solid white;
+  border-radius: 6px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  flex-direction: column;
+  position: relative;;
+}
+
+.form , .formupdate{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color:  white;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: none;
+}
+
+#Addemployee , #Updateemployee{
+  padding: 15px;
+  line-height: 50px;
+}
+
+.boutton {
+  text-align: right;
+}
+
+.valider{
+  padding: 12px;
+  border-radius: 15px;
+  background-color: red;
+  color: white;
+  transition: all .5s;
+  border: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.valider:hover{
+  background-color: white;
+  color: red;
+  border: none;
+  border: 1px solid red;
+}
+
+.Annuler {
+  padding: 12px;
+  border-radius: 15px;
+  background-color: white;
+  color: red;
+  transition: all .5s;
+  border: none;
+  border: 1px solid red;
+  cursor: pointer;
+  
+}
+
+.Annuler:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid transparent
+}

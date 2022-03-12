@@ -1,0 +1,151 @@
+.employeelist {
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    color: red;
+    text-align: center;
+}
+.sheduleconge , .sheduleabs{
+    background-image: url(projet6.jpg);
+    border: 2px solid white;
+    border-radius: 6px;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    flex-direction: column;
+}
+* {
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+}
+
+.weHR {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 32px;
+    margin-bottom: 17px;
+    border: 1px solid white;
+    background-image: url(projet7.jpg);
+    color: black;
+}
+
+.slidebar p {
+    width: 100%;
+    height: 51px;
+    padding-left: 35px;
+    display: flex;
+    align-items: center;
+    transition: all .5s;
+}
+
+.slidebar p:hover {
+    background-color: white;
+    color: rgba(255, 0, 0, 0.86);
+}
+
+.slidebar p a::first-letter {
+    text-transform: uppercase;
+}
+.slidebar {
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 0, 0, 0.932);
+    color: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h4 {
+    color:  rgba(0, 0, 0, 0.568);
+    font-size: 12px;
+    padding-left: 16px;
+    margin-top: 6px;
+}
+
+.table{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.update {
+    background-color: rgba(0, 153, 255, 0.644);
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.delet {
+    background-color: rgba(239, 243, 3, 0.582);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.view {
+    background-color: rgba(252, 4, 149, 0.575);
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+th , td{
+    color: black;
+    border: 1px solid black;
+}
+
+.tr2 {
+    background-color: rgba(0, 153, 255, 0.452);
+}
+
+.tr4 {
+    background-color: rgba(239, 243, 1, 0.438);
+}
+
+.tr6 {
+    background-color: rgba(252, 4, 149, 0.384);
+}
+
+.add {
+    font-size: 14px;
+    color: white;
+    
+}
+
+.add:hover {
+    background-color: rgba(0, 153, 255, 0.452);
+    color: white;
+    transition: all .5s;
+}
+
+.listeConge , .listeabs{
+    color: white;
+    background-color: black;
+   
+}
+
+.listeConge:hover {
+    background-color: rgba(239, 243, 1, 0.438);
+    color: rgba(0, 0, 0, 0.61);
+}
+
+.listeabs:hover {
+    background-color: rgba(239, 243, 1, 0.438);
+    color: rgba(0, 0, 0, 0.61);
+}
+
+.retour {
+    font-size: 11px;
+    color: black;
+}

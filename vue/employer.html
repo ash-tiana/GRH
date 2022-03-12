@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Projet</title>
+  <meta charset="utf_8" />
+  <link rel="stylesheet" href="../css/Dashboard.css" />
+  <link rel="stylesheet" href="../css/employee.css">
+  <link rel="stylesheet" href="../css/shedule.css">
+  <link rel="stylesheet" href="../css/projet.css" />
+  
+</head>
+
+<body>
+
+  <div class="slidebar">
+    <h3 class="weHR">Gestion des Ressources Humaines</h3>
+    <h4>MAIN MENU</h4>
+    <p><a href="../index.html">Dashboard</a></p>
+    <p><a href="/vue/employer.html">employees</a></p>
+    <p><a href="#">shedule</a></p>
+    <p><a href="#">recrutment</a></p>
+    <p><a href="#">departement</a></p>
+    <h4>OTHER</h4>
+    <p><a href="#">support</a></p>
+    <p><a href="#">Settings</a></p>
+  </div>
+  <div class="employee">
+    <h2 class="employeelist">Employees List</h2>
+    <a href="#" class="AddEmployee">+ Add employee</a>
+    <div class="form">
+        <form id="Addemployee">
+          <div>
+            <label for="Nom">
+              Entrer votre Nom
+            </label>
+            <input type="text" name="pseudo" id="Nom" placeholder="Tiana" required />
+            <div>
+              <label for="Prénom">
+                Entrer votre Prénom
+              </label>
+              <input type="text" name="pseudo" id="Prénom" placeholder="Tiana" required />
+            </div>
+          </div>
+          <div>
+            <label for="email">
+              Entrer votre email
+            </label>
+            <input type="email" name="email" id="email" placeholder="tiana@gmail.com" required />
+          </div>
+          <div class="boutton">
+          <input class="valider" type="submit" value="Valider" />
+          <input class="Annuler" type="reset" value="Annuler" />
+          </div>
+        </form>
+    </div>
+
+    <div class="formupdate">
+      <form id="Updateemployee">
+        <div >
+          <label for="Nom">
+            Nom
+          </label>
+          <input type="text" name="pseudo" id="Nom" placeholder="Tiana" required />
+          <div>
+            <label for="Prénom">
+              Prénom
+            </label>
+            <input type="text" name="pseudo" id="Prénom" placeholder="Tiana" required />
+          </div>
+        </div>
+        <div>
+          <label for="email">
+            email
+          </label>
+          <input type="email" name="email" id="email" placeholder="tiana@gmail.com" required />
+        </div>
+        <div class="boutton">
+        <input class="valider" type="submit" value="Valider" />
+        <input class="Annuler" type="reset" value="Annuler" />
+        </div>
+      </form>
+  </div>
+    <table class="table" id="newEmployeeTable">
+      <tbody></tbody>
+      <!--      <tr>
+        <th>Employee First Name</th>
+        <th>Employee Last Name</th>
+        <th>Employee Email ID</th>
+        <th>Actions</th>
+      </tr>
+      <tr>
+        <td>Rakoto</td>
+        <td>Tiana</td>
+        <td>RakotoTiana@gmail.com</td>
+        <td>
+          <input class="update" type="submit" value="Update" />
+          <input class="delet" type="reset" value="Delet" />
+          <input class="view" type="submit" value="view" />
+        </td>
+      </tr>
+      <tr class="tr2">
+        <td>Ranarivelo</td>
+        <td>Aina</td>
+        <td>RanariveloAina@gmail.com</td>
+        <td>
+          <input class="update" type="submit" value="Update" />
+          <input class="delet" type="reset" value="Delet" />
+          <input class="view" type="submit" value="view" />
+        </td>
+      </tr>
+      <tr>
+        <td>Randria</td>
+        <td>Tojo</td>
+        <td>RandriaTojo@gmail.com</td>
+        <td>
+          <input class="update" type="submit" value="Update" />
+          <input class="delet" type="reset" value="Delet" />
+          <input class="view" type="submit" value="view" />
+        </td>
+      </tr>
+      <tr class="tr4">
+        <td>Ratolojanahary</td>
+        <td>Ntsoa</td>
+        <td>RatolojanaharyNtsoa@gmail.com</td>
+        <td>
+          <input class="update" type="submit" value="Update" />
+          <input class="delet" type="reset" value="Delet" />
+          <input class="view" type="submit" value="view" />
+        </td>
+      </tr>
+      <tr>
+        <td>Andriavony</td>
+        <td>Charle</td>
+        <td>RandriavonyCharle@gmail.com</td>
+        <td>
+          <input class="update" type="submit" value="Update" />
+          <input class="delet" type="reset" value="Delet" />
+          <input class="view" type="submit" value="view" />
+        </td>
+      </tr>
+      <tr class="tr6">
+        <td>Ny Anja</td>
+        <td>Fanomezantsoa</td>
+        <td>Fanomezantsoa2@gmail.com</td>
+        <td>
+          <input class="update" type="submit" value="Update" />
+          <input class="delet" type="reset" value="Delet" />
+          <input class="view" type="submit" value="view" />
+        </td>
+      </tr>
+      <tr>
+        <td>Andrianina</td>
+        <td>Rova</td>
+        <td>Rova1@gmail.com</td>
+        <td>
+          <input class="update" type="submit" value="Update" />
+          <input class="delet" type="reset" value="Delet" />
+          <input class="view" type="submit" value="view" />
+        </td>
+      </tr>
+      <tr class="tr2">
+        <td>Hajo</td>
+        <td>Tiana</td>
+        <td>HajoTiana@gmail.com</td>
+        <td>
+          <input class="update" type="submit" value="Update" />
+          <input class="delet" type="reset" value="Delet" />
+          <input class="view" type="submit" value="view" />
+        </td>
+      </tr>
+      <tr>
+        <td>Malalaniaina</td>
+        <td>Christiana</td>
+        <td>Malala@gmail.com</td>
+        <td>
+          <input class="update" type="submit" value="Update" />
+          <input class="delet" type="reset" value="Delet" />
+          <input class="view" type="submit" value="view" />
+        </td>
+      <tr>
+        <td>Razafy</td>
+        <td>Kantoniaina</td>
+        <td>Kantoniaina@gmail.com</td>
+        <td>
+          <input class="update" type="submit" value="Update" />
+          <input class="delet" type="reset" value="Delet" />
+          <input class="view" type="submit" value="view" />
+        </td>
+      </tr>
+      <tr class="tr2">
+        <td>Fanjasoa</td>
+        <td>Rindra</td>
+        <td>Rindra35@gmail.com</td>
+        <td>
+          <input class="update" type="submit" value="Update" />
+          <input class="delet" type="reset" value="Delet" />
+          <input class="view" type="submit" value="view" />
+        </td>
+      </tr>
+      <tr>
+        <td>Ramanoelina</td>
+        <td>Mathieu</td>
+        <td>Math.4@gmail.com</td>
+        <td>
+          <input class="update" type="submit" value="Update" />
+          <input class="delet" type="reset" value="Delet" />
+          <input class="view" type="submit" value="view" />
+        </td>
+      </tr>
+      </tr> -->
+    </table>
+  </div>
+
+  <!-- <div id="conge" class="sheduleconge">
+        <h2 class="employeelist">Liste des congés</h2>
+        <a href="#" class="add">+ Add employee Conge</a>
+        <a href="#" class="add">+ Add employee Absence</a>
+        <table class="table">
+            <tr>
+                <th>Employee First Name</th>
+                <th>Employee Last Name</th>
+                <th>Employee Email ID</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>Rakoto</td>
+                <td>Tiana</td>
+                <td>RakotoTiana@gmail.com</td>
+                <td>
+                    <input class="update" type="submit" value="Update" />
+                    <input class="delet" type="reset" value="Delet" />
+                    <input class="view" type="submit" value="view" />
+                </td>
+            </tr>
+            <tr>
+                <td>Randria</td>
+                <td>Tojo</td>
+                <td>RandriaTojo@gmail.com</td>
+                <td>
+                    <input class="update" type="submit" value="Update" />
+                    <input class="delet" type="reset" value="Delet" />
+                    <input class="view" type="submit" value="view" />
+                </td>
+            </tr>
+            <tr class="tr4">
+                <td>Ratolojanahary</td>
+                <td>Ntsoa</td>
+                <td>RatolojanaharyNtsoa@gmail.com</td>
+                <td>
+                    <input class="update" type="submit" value="Update" />
+                    <input class="delet" type="reset" value="Delet" />
+                    <input class="view" type="submit" value="view" />
+                </td>
+            </tr>
+            <tr class="tr2">
+                <td>Fanjasoa</td>
+                <td>Rindra</td>
+                <td>Rindra35@gmail.com</td>
+                <td>
+                    <input class="update" type="submit" value="Update" />
+                    <input class="delet" type="reset" value="Delet" />
+                    <input class="view" type="submit" value="view" />
+                </td>
+            </tr>
+        </table>
+    </div> -->
+
+</body>
+<script type="module" src="/Control/AllEmployer.js"></script>
+<script src="../script/form.js"></script>
+
+</html>

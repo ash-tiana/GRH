@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Projet</title>
+    <meta charset="utf_8" />
+    <link rel="stylesheet" href="css/projet.css" />
+    <link rel="stylesheet" href="css/Dashboard.css" />
+    <link rel="stylesheet" href="css/employee.css">
+    <link rel="stylesheet" href="css/shedule.css">
+
+</head>
+
+<body>
+
+    <div class="slidebar">
+        <h3 class="weHR">Gestion des Ressources Humaines</h3>
+        <h4>MAIN MENU</h4>
+        <p><a href="#">Dashboard</a></p>
+        <p><a href="/vue/employer.html">employees</a></p>
+        <p><a href="#">shedule</a></p>
+        <p><a href="#">recrutment</a></p>
+        <p><a href="#">departement</a></p>
+        <h4>OTHER</h4>
+        <p><a href="#">support</a></p>
+        <p><a href="#">Settings</a></p>
+    </div>
+
+
+    <div class="Dashboard">
+        <h1>Dashboard</h1>
+        <div class="cardwrap">
+            <div class="card card1">
+                <h3>Poste à <br /> trouver</h3>
+                <p class="number">5</p>
+                <p class=" descri descri1">4 Urgently needed</p>
+            </div>
+            <div class="card card2">
+                <h3>Poste <br /> libre</h3>
+                <p class="number">4</p>
+                <p class=" descri descri2">4 active hiring</p>
+            </div>
+            <div class="card card3">
+                <h3>Nouveau <br />employee</h3>
+                <p class="number" id="newEmployee">--</p>
+                <p class=" descri descri3">1 Departement</p>
+            </div>
+        </div>
+        <div class="bigCardwrap">
+            <div class="bigCard">
+                <h3>Total employees</h3>
+                <p class="number" id="totalEmployee">--</p>
+                <p class="men">35 Men</p>
+                <p class="woman">15 Woman</p>
+            </div>
+            <div class="bigCard">
+                <h3>Recherche Talent</h3>
+                <p class="number">10</p>
+                <p class="men"> 3 Men</p>
+                <p class="woman">7 Women</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--   <div class="employee">
+        <h2 class="employeelist">Employees List</h2>
+       <span> 
+           <a href="seduleconge.html" class="listeConge">Lists employee Congés</a>
+           <a href="sheduleabs.html" class="listeabs">Lists Employee Absents</a>
+        </span>
+        <a href="#" class="add">+ Add employee</a>
+        <table class="table">
+                <tr>
+                    <th>Employee First Name</th>
+                    <th>Employee Last Name</th>
+                    <th>Employee Email ID</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>Rakoto</td>
+                    <td>Tiana</td>
+                    <td>RakotoTiana@gmail.com</td>
+                    <td>
+                        <input class="update" type="submit" value="Update" />
+                        <input class="delet" type="reset" value="Delet" />
+                        <input class="view" type="submit" value="view" />
+                    </td>
+                </tr>
+                <tr class="tr2">
+                    <td>Ranarivelo</td>
+                    <td>Aina</td>
+                    <td>RanariveloAina@gmail.com</td>
+                    <td>
+                        <input class="update" type="submit" value="Update" />
+                        <input class="delet" type="reset" value="Delet" />
+                        <input class="view" type="submit" value="view" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Randria</td>
+                    <td>Tojo</td>
+                    <td>RandriaTojo@gmail.com</td>
+                    <td>
+                        <input class="update" type="submit" value="Update" />
+                        <input class="delet" type="reset" value="Delet" />
+                        <input class="view" type="submit" value="view" />
+                    </td>
+                </tr>
+                <tr class="tr4">
+                    <td>Ratolojanahary</td>
+                    <td>Ntsoa</td>
+                    <td>RatolojanaharyNtsoa@gmail.com</td>
+                    <td>
+                        <input class="update" type="submit" value="Update" />
+                        <input class="delet" type="reset" value="Delet" />
+                        <input class="view" type="submit" value="view" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Andriavony</td>
+                    <td>Charle</td>
+                    <td>RandriavonyCharle@gmail.com</td>
+                    <td>
+                        <input class="update" type="submit" value="Update" />
+                        <input class="delet" type="reset" value="Delet" />
+                        <input class="view" type="submit" value="view" />
+                    </td>
+                </tr>
+                <tr class="tr6">
+                    <td>Ny Anja</td>
+                    <td>Fanomezantsoa</td>
+                    <td>Fanomezantsoa2@gmail.com</td>
+                    <td>
+                        <input class="update" type="submit" value="Update" />
+                        <input class="delet" type="reset" value="Delet" />
+                        <input class="view" type="submit" value="view" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Andrianina</td>
+                    <td>Rova</td>
+                    <td>Rova1@gmail.com</td>
+                    <td>
+                        <input class="update" type="submit" value="Update" />
+                        <input class="delet" type="reset" value="Delet" />
+                        <input class="view" type="submit" value="view" />
+                    </td>
+                </tr>
+                <tr class="tr2">
+                    <td>Hajo</td>
+                    <td>Tiana</td>
+                    <td>HajoTiana@gmail.com</td>
+                    <td>
+                        <input class="update" type="submit" value="Update" />
+                        <input class="delet" type="reset" value="Delet" />
+                        <input class="view" type="submit" value="view" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Malalaniaina</td>
+                    <td>Christiana</td>
+                    <td>Malala@gmail.com</td>
+                    <td>
+                        <input class="update" type="submit" value="Update" />
+                        <input class="delet" type="reset" value="Delet" />
+                        <input class="view" type="submit" value="view" />
+                    </td>
+                    <tr>
+                        <td>Razafy</td>
+                        <td>Kantoniaina</td>
+                        <td>Kantoniaina@gmail.com</td>
+                        <td>
+                            <input class="update" type="submit" value="Update" />
+                            <input class="delet" type="reset" value="Delet" />
+                            <input class="view" type="submit" value="view" />
+                        </td>
+                    </tr>
+                    <tr class="tr2">
+                        <td>Fanjasoa</td>
+                        <td>Rindra</td>
+                        <td>Rindra35@gmail.com</td>
+                        <td>
+                            <input class="update" type="submit" value="Update" />
+                            <input class="delet" type="reset" value="Delet" />
+                            <input class="view" type="submit" value="view" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ramanoelina</td>
+                        <td>Mathieu</td>
+                        <td>Math.4@gmail.com</td>
+                        <td>
+                            <input class="update" type="submit" value="Update" />
+                            <input class="delet" type="reset" value="Delet" />
+                            <input class="view" type="submit" value="view" />
+                        </td>
+                    </tr>
+                </tr>
+        </table>
+    </div>
+ -->
+    <!-- <div id="conge" class="sheduleconge">
+        <h2 class="employeelist">Liste des congés</h2>
+        <a href="#" class="add">+ Add employee Conge</a>
+        <a href="#" class="add">+ Add employee Absence</a>
+        <table class="table">
+            <tr>
+                <th>Employee First Name</th>
+                <th>Employee Last Name</th>
+                <th>Employee Email ID</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>Rakoto</td>
+                <td>Tiana</td>
+                <td>RakotoTiana@gmail.com</td>
+                <td>
+                    <input class="update" type="submit" value="Update" />
+                    <input class="delet" type="reset" value="Delet" />
+                    <input class="view" type="submit" value="view" />
+                </td>
+            </tr>
+            <tr>
+                <td>Randria</td>
+                <td>Tojo</td>
+                <td>RandriaTojo@gmail.com</td>
+                <td>
+                    <input class="update" type="submit" value="Update" />
+                    <input class="delet" type="reset" value="Delet" />
+                    <input class="view" type="submit" value="view" />
+                </td>
+            </tr>
+            <tr class="tr4">
+                <td>Ratolojanahary</td>
+                <td>Ntsoa</td>
+                <td>RatolojanaharyNtsoa@gmail.com</td>
+                <td>
+                    <input class="update" type="submit" value="Update" />
+                    <input class="delet" type="reset" value="Delet" />
+                    <input class="view" type="submit" value="view" />
+                </td>
+            </tr>
+            <tr class="tr2">
+                <td>Fanjasoa</td>
+                <td>Rindra</td>
+                <td>Rindra35@gmail.com</td>
+                <td>
+                    <input class="update" type="submit" value="Update" />
+                    <input class="delet" type="reset" value="Delet" />
+                    <input class="view" type="submit" value="view" />
+                </td>
+            </tr>
+        </table>
+    </div> -->
+
+</body>
+
+<script type="module" src="/Control/dashboard.js"></script>
+
+</html>
